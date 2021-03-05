@@ -3,11 +3,23 @@
 ### RabbitMQ Settings
 For testing, you can create a free account on CloudAMQP and fill the following details in application-demo.properties
 For further reference, please consider the following sections:
-spring.rabbitmq.host=
-spring.rabbitmq.port=
-spring.rabbitmq.username=
-spring.rabbitmq.password=
-spring.rabbitmq.virtual-host
+<br>spring.rabbitmq.host=
+<br>spring.rabbitmq.port=
+<br>spring.rabbitmq.username=
+<br>spring.rabbitmq.password=
+<br>spring.rabbitmq.virtual-host=
+
+### How to run
+1. Create a free account on CloudAMQP and add all rabbitmq details.
+2. Since it's using h2 db. You can start the application and go to localhost:8080/h2-console and add following details, then click on connect.
+<br>Driver class: org.h2.Driver
+<br>jdbcURL: jdbc:h2:./data/sbremote
+<br>username: sa
+<br>pwd: blank
+3. Run the SQL script provided in data.sql file.
+4. Using intelliJ you can run the application parallely by providing different ports in the variables.
+5. just open http://localhost:8080 to start the job.
+
 
 ### Remote + Local Partition
 To make both work at the same time, we need to make sure, partition names are different for both.
