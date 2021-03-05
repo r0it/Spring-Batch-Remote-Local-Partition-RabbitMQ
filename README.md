@@ -1,5 +1,6 @@
 # Spring Batch Remote + Local Partitioning with RabbitMQ
-
+A cloud ready app for extreme batch processing using N servers and N threads for each server. I have achieved Remote + Local partitioning using RabbitMQ.
+<br>eg. you can run this app on 4 servers and each server can have 8 threads. So total 32 threads are processing the batches in parallel.
 ### RabbitMQ Settings
 For testing, you can create a free account on CloudAMQP and fill the following details in application-demo.properties
 For further reference, please consider the following sections:
